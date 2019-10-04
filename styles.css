@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid lime;
+    color: white;
+}
+
+html {
+    background-color: gray;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+}
+
+main {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+ul {
+    text-align: center;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+    background-color: black;
+    padding: 2em 5em 2em 5em;
+}
