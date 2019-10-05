@@ -1,6 +1,4 @@
 # quizapp
-The World's Greatest Quiz
-
 
 LIE DETECTOR
 ================
