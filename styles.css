@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    border: 1px solid lime;
-    color: white;
+    border: 1px solid black;
+    color: black;
 }
 
 html {
@@ -13,17 +13,48 @@ html {
 }
 
 body {
-    background-color: white;
-}
-
-main {
     background-color: black;
 }
 
-h1 {
+main {
+    background-color: white;
+}
+
+h1, h2, h3 {
     text-align: center;
-    font-size: 3rem;
     margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.correct-answer {
+    display: block;
+    text-align: center;
+}
+
+br {
+    display: block;
+}
+
+.final-score {
+    text-align: center;
+    display: block;
+}
+
+.final-score__number {
+    font-size: 4rem;
+    text-align: center;
+    display: block;
 }
 
 ul {
@@ -38,6 +69,6 @@ li {
 button {
     margin: 0 auto;
     display: block;
-    background-color: black;
+    background-color: white;
     padding: 2em 5em 2em 5em;
 }

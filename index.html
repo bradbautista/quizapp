@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <title>The World's Greatest Quiz</title>
+    <title>Lie Detector</title>
 </head>
 <body>
 
-<main role="" class="">
-    <header role="" class="">
+<main class="placeholder-main">
+    <header class="placeholder-header">
       <section>
-        <h1>The World's Greatest Quiz</h1>
+        <h1>Lie Detector</h1>
         <ul>
-          <li class="">Question:
-            <span class="">0</span> OUT OF #</li>
-          <li class="">Score:
-            <span class="">1,000,000,000</span>
+          <li class="question-label">Question:
+            <span class="question-number js-question-number">0</span> OUT OF #</li>
+          <li class="score-label">Score:
+            <span class="user-score js-user-score">0</span>
           </li>
         </ul>
       </section>
@@ -27,23 +27,39 @@
 
     <form>
         <fieldset>
-            <legend class="question">What is your answer to this question?</legend>
-            <input type="radio" name="" id="" value="0">
-            <label for="">The first choice!</label>
+            <legend class="question">Which one of these is a lie?</legend>
+            <input type="radio" name="option-one js-option-one" id="option-one" value="0">
+            <label for="option-one">Strange truth.</label>
             <br>
-            <input type="radio" name="" id="" value="1">
-            <label for="">No, the second choice.</label>
+            <input type="radio" name="option-two js-option-two" id="option-two" value="1">
+            <label for="option-two">Strange truth.</label>
             <br>
-            <input type="radio" name="" id="" value="2">
-            <label for="">Wait, the third choice.</label>
+            <input type="radio" name="option-three js-option-three" id="option-three" value="2">
+            <label for="option-three">Strange truth.</label>
             <br>
-            <input type="radio" name="" id="" value="3">
-            <label for="">Can I say all of the above?</label>
+            <input type="radio" name="option-four js-option-four" id="option-four" value="3">
+            <label for="option-four">Lie.</label>
         </fieldset>
 
         <button type="button" class="">BEGIN THE QUIZ</button>
     </form>
     
+    <section role="complementary">
+            <h2>True/False</h2>
+            <span class="correct-answer js-correct-answer">Sorry or congratulations here is the answer</span>
+            <button type="button" class="">NEXT QUESTION PLEASE</button>
+    </section>
+
+    <section role="complementary">
+            <h3>How You Did on This Quiz</h3>
+            <span class="final-score js-final-score">You answered</span>
+            <br>
+            <span class="final-score__number js-final-score__number">X%</span>
+            <br>
+            <span class="final-score js-final-score">of the questions correctly. Would you like to play again?</span>
+            <button type="button" class="">I WANT A REMATCH</button>
+    </section>
+
 </main>
 
 
