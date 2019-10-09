@@ -1,59 +1,45 @@
 * {
     box-sizing: border-box;
-    border: 1px solid black;
     color: black;
-}
-
-html {
-    background-color: gray;
+    font-family: 'Chivo', sans-serif;
 }
 
 html {
     height: 100%;
 }
 
-body {
-    background-color: black;
-}
-
-main {
-    background-color: white;
+header {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1, h2, h3 {
-    text-align: center;
     margin: 0;
 }
 
 h1 {
-    font-size: 3rem;
+    text-align: left;
+    letter-spacing: -3px;
+    font-size: 19.5vw;
+    font-weight: 900;
+    margin-left: 5vw;
+    margin-bottom: 8vw;
+    padding-top: 5vw;
+    line-height: 90%;
 }
 
 h2 {
-    font-size: 4rem;
-}
-
-h3 {
-    font-size: 2rem;
-}
-
-.correct-answer {
-    display: block;
     text-align: center;
+    font-size: 17.5vw;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin-top: -3vw;
+    margin-bottom: 2vw;
+    text-transform: uppercase;
 }
 
 br {
-    display: block;
-}
-
-.final-score {
-    text-align: center;
-    display: block;
-}
-
-.final-score__number {
-    font-size: 4rem;
-    text-align: center;
     display: block;
 }
 
@@ -63,12 +49,250 @@ ul {
 }
 
 li {
+    font-weight: 300;
+    line-height: 120%;
+    font-size: 7vw;
+    letter-spacing: -1px;
     list-style-type: none;
+    text-align: left;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    margin-top: 5vw;
+}
+
+form {
+    display: flex;
+}
+
+fieldset {
+    display: inline-block;
+    width: 70%;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+legend {
+    font-weight: 700;
+    font-size: 7vw;
+    letter-spacing: -0.75px;
+}
+
+label {
+    letter-spacing: -0.75px;
 }
 
 button {
-    margin: 0 auto;
+    margin-top: 7vw;
+    font-weight: 900;
+    font-size: 11vw;
+    letter-spacing: -1px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
-    background-color: white;
-    padding: 2em 5em 2em 5em;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.quiz-area {
+    padding-bottom: 10vw;
+}
+
+.press-start {
+    padding: 10vw;
+}
+
+.submit-answer {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+
+.answer, .total-score {
+    display: block;
+    text-align: left;
+    letter-spacing: -0.5px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8vw;
+}
+
+.thank-u-next, .restart-quiz {
+    padding: 5vw 10vw 5vw 10vw;
+    width: 70%;
+    margin-top: 0;
+}
+
+/* MEDIA QUERIES */
+
+
+/* TABLET */
+@media screen and (min-width: 720px) {
+    
+    h1 {
+        font-size: 18vw;
+    }
+
+    h2 {
+        font-size: 24vw;
+        margin-bottom: 0;
+        letter-spacing: -10px;
+    }
+
+    ul {
+        margin-top: -3vw;
+        margin-bottom: 3vw;
+    }
+
+    li {
+        font-size: 5vw;
+        letter-spacing: -1.25px;
+    }
+
+    .answer, .total-score {
+        font-size: 5vw;
+        margin-top: 0vw;
+        margin-bottom: 7vw;
+    }
+
+    .submit-answer {
+        width: 100%;
+        margin-top: 3.5vw;
+    }
+
+    fieldset {
+        display: inline-block;
+        width: 70%;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    label {
+        font-size: 4vw;
+        letter-spacing: -0.5px;
+    }
+
+    input {
+        margin-top: 3.8vw;
+    }
+
+    input[type="radio"] {
+        position: relative;
+        top: -5px;
+    }
+
+    .results {
+        font-size: 19vw;
+        letter-spacing: -10px;
+    }
+
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+
+    header {
+        width: 70%;
+    }
+
+    h1 {
+        text-align: left;
+        letter-spacing: -5px;
+        font-size: 6.2vw;
+        font-weight: 900;
+        margin-left: 0;
+        margin-bottom: 0vw;
+        padding-top: 2.5vw;
+        line-height: 90%;
+    }
+
+    h2 {
+        font-size: 11vw;
+        margin-top: -1vw;
+        margin-bottom: 0vw;
+        letter-spacing: -10px;
+    }
+
+    .results {
+        font-size: 11vw;
+    }
+
+    body {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button {
+        margin-top: 2.5vw;
+        font-size: 5vw;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+
+    .press-start {
+        width: 70%;
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
+
+    .quiz-area {
+        padding-bottom: 4vw;
+    }
+
+    ul {
+        margin-top: 1.5vw;
+        margin-bottom: .5vw;
+    }
+
+    li {
+        font-size: 2.5vw;
+        letter-spacing: -1.25px;
+    }
+
+    fieldset {
+        margin-top: 1vw;
+    }
+
+    legend {
+        font-size: 3vw;
+    }
+    
+    label {
+        font-size: 1.75vw;
+        letter-spacing: -0.5px;
+    }
+
+    input {
+        margin-top: 2vw;
+    }
+
+    .thank-u-next, .restart-quiz, .press-start {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .submit-answer {
+        margin-top: 2vw;
+    }
+    
+    .answer, .total-score {
+        font-size: 1.75vw;
+        margin-top: 0vw;
+        margin-bottom: 3vw;
+    }
+
 }

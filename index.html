@@ -6,74 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <title>Lie Detector</title>
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,,700,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b7241d4776.js" crossorigin="anonymous"></script>
+    <title>Three Lies and the Truth</title>
 </head>
+
 <body>
 
-<main class="placeholder-main">
-    <header class="placeholder-header">
-      <section>
-        <h1>Lie Detector</h1>
-        <ul>
-          <li class="question-label">Question:
-            <span class="question-number js-question-number">0</span> OUT OF #</li>
-          <li class="score-label">Score:
-            <span class="user-score js-user-score">0</span>
-          </li>
-        </ul>
-      </section>
+<main>
 
+  <article>
+
+    <header>
+      <h1>Three Lies and the Truth</h1>
     </header>
 
-    <form>
-        <fieldset>
-            <legend class="question">Which one of these is a lie?</legend>
-            <input type="radio" name="option-one js-option-one" id="option-one" value="0">
-            <label for="option-one">Strange truth.</label>
-            <br>
-            <input type="radio" name="option-two js-option-two" id="option-two" value="1">
-            <label for="option-two">Strange truth.</label>
-            <br>
-            <input type="radio" name="option-three js-option-three" id="option-three" value="2">
-            <label for="option-three">Strange truth.</label>
-            <br>
-            <input type="radio" name="option-four js-option-four" id="option-four" value="3">
-            <label for="option-four">Lie.</label>
-        </fieldset>
-
-        <button type="button" class="">BEGIN THE QUIZ</button>
-    </form>
-    
-    <section role="complementary">
-            <h2>True/False</h2>
-            <span class="correct-answer js-correct-answer">Sorry or congratulations here is the answer</span>
-            <button type="button" class="">NEXT QUESTION PLEASE</button>
+    <section class="quiz-area js-quiz-area">
+      <section class="scoreboard js-scoreboard" id="scoreboard"></section>
+      <section class="js-intro-card">
+        <button type="button" class="press-start js-press-start">FIND TRUTH</button>
+      </section>
+      <section class="js-question-area"></section>
+      <section class="js-answer-area"></section>
+      <section class="js-results-area"></section>
     </section>
 
-    <section role="complementary">
-            <h3>How You Did on This Quiz</h3>
-            <span class="final-score js-final-score">You answered</span>
-            <br>
-            <span class="final-score__number js-final-score__number">X%</span>
-            <br>
-            <span class="final-score js-final-score">of the questions correctly. Would you like to play again?</span>
-            <button type="button" class="">I WANT A REMATCH</button>
-    </section>
+  </article>
 
 </main>
 
-
-
-
-
-
-
-
-
-
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
