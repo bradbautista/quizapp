@@ -70,7 +70,8 @@ function generateQuestion() {
     incrementQuestion();
 
     // Shuffle our truths and lies
-    shuffle(truths, lies);
+    shuffle(truths);
+    shuffle(lies);
 
     // Grab three lies and a truth and make a new array from them. 
     // In order for the truth to prevail, it must be known far and wide
